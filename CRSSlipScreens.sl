@@ -45,6 +45,21 @@ creator.gui.screen qml1e837da7c0fb4203846aa9fa8283b4e3 "CRS_New"
 			type = qml18bf3772b7ac4aacaa2937cfe35e71fd
 			status = dontcare;
 	}
+	creator.gui.form qml6698a713a1f344458fceeb5dabd72d0d "Address_Details"
+	{
+		creator.gui.dropdown qml139bb9d4df2b4f588b3e28f1c0e81f65 "AddressType"
+			type = qmlafc388a8a16a4e01b0528d8b3ac4f458
+			status = dontcare;
+		creator.gui.textbox qml535939c72b544a7b9ceb8bd18012e3ad "AddressLine1"
+			type = String
+			status = dontcare;
+		creator.gui.textbox qml3f7fb928910241d681a6927dca55f5e5 "AddressLine2"
+			type = String
+			status = dontcare;
+		creator.gui.dropdown qmlbeb99bc75de94a48aeba8e08116b4cfc "CountryCode"
+			type = qml8ccdd279d10c42be9b1c484cc47f60cd
+			status = dontcare;
+	}
 }
 creator.enum qml1a0c7673df8a4349a05c2c401e85b1b6 "AccountType"
 	deleted
@@ -80,4 +95,16 @@ creator.enum qml0b1a468bd3cc47fb98c312a01ffe3d33 "AccountType (1)"
 	creator.enumerationvalue qmlb51e2ef509ac4057ab453f4d98a3a606 "FACDA";
 	creator.enumerationvalue qmlb0e13a60a55a41a5b0dc611465a9871e "TIS";
 	creator.enumerationvalue qml33ec246485344b81a7abd630280d8a99 "RBIS";
+}
+creator.enum qmlafc388a8a16a4e01b0528d8b3ac4f458 "AddressType"
+{
+	creator.enumerationvalue qml4e9be69746e54c9bb60c20ace3f073c8 "Residentail";
+	creator.enumerationvalue qml55fcf1d72d364c968f710a9f82d5a598 "Business";
+	creator.enumerationvalue qmlc908e80930344564b9f30707860f2cf1
+	"RegisteredOffice";
+}
+creator.enum qml8ccdd279d10c42be9b1c484cc47f60cd "CountryCode"
+{
+	creator.enumerationvalue qml4bd739432f5f45f3b73ad6ff9dd908b2 "India";
+	creator.enumerationvalue qml41369908a8774722af102ce0ce77a3e2 "UnitedStates";
 }
